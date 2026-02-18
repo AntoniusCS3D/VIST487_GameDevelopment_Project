@@ -3,6 +3,7 @@
 
 #include "MG_CharacterBase.h"
 #include "GameplayAbilitySystem/AttributeSets/BasicAttributeSet.h"
+#include "GameplayAbilitySystem/AttributeSets/CombatAttributeSet.h"
 
 // Sets default values
 AMG_CharacterBase::AMG_CharacterBase()
@@ -17,6 +18,9 @@ AMG_CharacterBase::AMG_CharacterBase()
 
 	//Add basic attribute set
 	BasicAttributeSet = CreateDefaultSubobject<UBasicAttributeSet>(TEXT("BasicAttributeSet"));
+
+	//Add combat attribute set
+	CombatAttributeSet = CreateDefaultSubobject<UCombatAttributeSet>(TEXT("CombatAttributeSet"));
 }
 
 // Called when the game starts or when spawned
