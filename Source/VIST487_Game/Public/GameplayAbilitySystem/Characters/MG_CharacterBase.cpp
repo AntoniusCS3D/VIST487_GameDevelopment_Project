@@ -2,6 +2,7 @@
 
 
 #include "MG_CharacterBase.h"
+#include "GameplayAbilitySystem/AttributeSets/BasicAttributeSet.h"
 
 // Sets default values
 AMG_CharacterBase::AMG_CharacterBase()
@@ -13,6 +14,9 @@ AMG_CharacterBase::AMG_CharacterBase()
 	AbilitySystemComponent = CreateDefaultSubobject<UAbilitySystemComponent>(TEXT("AbilitySystemComponent"));
 	AbilitySystemComponent->SetIsReplicated(true);
 	AbilitySystemComponent->SetReplicationMode(ASC_ReplicationMode);
+
+	//Add basic attribute set
+	BasicAttributeSet = CreateDefaultSubobject<UBasicAttributeSet>(TEXT("BasicAttributeSet"));
 }
 
 // Called when the game starts or when spawned
