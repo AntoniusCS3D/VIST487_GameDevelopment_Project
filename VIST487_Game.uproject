@@ -7,7 +7,10 @@
 		{
 			"Name": "VIST487_Game",
 			"Type": "Runtime",
-			"LoadingPhase": "Default"
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"GameplayAbilities"
+			]
 		}
 	],
 	"Plugins": [
@@ -30,6 +33,10 @@
 				"Win64"
 			],
 			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/362651520df94e4fa65492dbcba44ae2"
+		},
+		{
+			"Name": "USDImporter",
+			"Enabled": true
 		}
 	],
 	"TargetPlatforms": [
